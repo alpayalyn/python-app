@@ -12,7 +12,16 @@ list_written = input_written.split(" ")
 mylist = list(dict.fromkeys(list_written))
 print(mylist)
 
+##############-----############
+items = [x for x in input().split(',')]
+items.sort()
+thing_to_print = ','.join(items)
+print(thing_to_print)
+##############-----############
 
+# how to create a list by getting an input
 
-
-
+s = input()
+words = [word for word in s.split(" ")]
+thing_to_print = " ".join(sorted(list(set(words))))
+print(thing_to_print)
